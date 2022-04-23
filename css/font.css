@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{background-color: #F3F5F7;}
+
+/* 기본 셋팅 */
+ul{list-style: none;}
+li, a, span{text-decoration: none;}
+li, a, p, span, h1, h2, h3, h4, h5{color: rgb(0, 0, 0); font-family: 'Noto Sans KR', sans-serif;}

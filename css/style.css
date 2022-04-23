@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{background-color: #F3F5F7;}
+
+/* 기본 셋팅 */
+ul{list-style: none;}
+li, a, span{text-decoration: none;}
+li, a, p, span, h1, h2, h3, h4, h5{color: white; font-family: 'Noto Sans KR', sans-serif;}
+
+
+/* 본 셋팅 */
+#wrapper{
+    width: 360px;
+    height: 760px;
+    border: 2px solid #ECEFF2;
+    border-radius: 12px;
+    box-shadow: 8px 12px 20px rgba(1, 0, 29, 0.068);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#wrapper-inner,
+#wrapper-inner02{
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+#wrapper-inner{ background-color: #060A10;}
+#wrapper-inner02{ background-color: white;}
+
+.top-bar{
+    width: 100%; 
+    height: 60px;  
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+.top-bar-container{width: 100%; height: 30px;}
+.top-bar-container > li{display: inline-block; margin-right: 20px;}
+.top-bar-container > li:nth-child(1)::after{
+    content:"9+";
+    background-color: #E83A31;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2px 7px;
+    position: relative;
+    top: -5px;
+    left: 4px;
+}
+.top-bar-container > li:nth-child(2){margin-left: 53%;}
+.top-bar-container > li:nth-child(3){margin-right: 0px;}
+
+.content{width: 100%; position: relative;}
+.have-money{
+    width: 65%;
+    height: 240px;
+    border-radius: 10px;
+    background: linear-gradient(140deg, #F7CE7B, #F4B956);
+}
+.paybox{
+    position: absolute; 
+    right: 0; 
+    width: 30%; 
+    height: 116px;
+    background: linear-gradient(140deg, #13161C, #13161C);
+    border: 2px solid #1F2228;
+    border-radius: 10px;
+}
+.paybox:nth-child(1){top: 0;}
+.bot-pay{top: 124px;}
+.donation-box{
+    width: 100%; 
+    height: 116px; 
+    margin-top: 20px;
+    background-color: #1F2328; 
+    border-radius: 10px;
+}
+
+#jum-box{
+    width: 100%; 
+    height: 20px; 
+    margin: 14px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.long-box{background-color: white; width: 18px; height: 6px; border-radius: 3px;}
+.shots-box{background-color: #474A4E; width: 6px; height: 6px; border-radius: 50%; margin: 0 4px;}
+
+
+.bot-img-btn{width: 100%; height: 130px; position: relative; top: 0;}
+.bot-img-btn > button {
+    color: white; 
+    width: 70px; 
+    height: 28px;
+    border: none;
+    border-radius: 14px;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: 500;
+    position: relative;
+    top: 80px;
+    left: 38%;
+}
+.img-group > img{position: absolute;}
+.img-group > img:nth-child(1){bottom: 0; left: 0;}
+/* 하단 메뉴 */
+footer{
+    width: 100%; 
+    height: 148px; 
+    border-radius: 10px; 
+    background-color: #282B2D;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.footer-inner{width: 100%; height: 100%; padding: 0 30px;}
+.top-btn{width: 100%; height: 38px;}
+.top-btn > h3{width: 33.3%; float: left; text-align: center; margin-top: 14px;}
+.bot-btn{width: 100%; margin-top: 30px;}
+.bot-menu{width: 100%;}
+.bot-menu > li{display: inline-block; margin: 0; padding: 3px 12px;}
+.bot-menu > li > a{text-align: center;}
+.bot-menu > li > a > p{margin-bottom: 4px;}
+.bot-menu > li > a > span{font-size: 13px; font-weight: 500;}
+
+
+
+
+
+
+

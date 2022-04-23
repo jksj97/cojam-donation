@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{background-color: #F3F5F7;}
+li, a, p, span, h1, h2, h3, h4, h5{font-family: 'Noto Sans KR', sans-serif;}
+
+/* 기본 셋팅 */
+ul{list-style: none;}
+li, a, span{text-decoration: none;}
+
+
+/* 홈 영역 */
+.home-top-kakaologo{position: relative;}
+.home-top-kakaologo > img,
+.home-top-kakaologo > h2{position: absolute;}
+.home-top-kakaologo > h2{font-size: 18px; font-weight: 700; top: -6px; left: 66px;}
+
+.top-bar-container > li:nth-child(1)::after{
+    content:"9+";
+    background-color: #E83A31;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2px 7px;
+    position: relative;
+    top: -5px;
+    left: 4px;
+    color: white;
+}
+
+main{margin-top: 50px;}
+.unicef-box{
+    width: 100%; 
+    height: 120px; 
+    border-radius: 10px; 
+    background-color: #EDFAFE;
+    margin-top: 40px;
+}
+.unicef-box > a{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    position: relative;
+    top: 22px;
+}
+.unicef-box > a > span{font-size: 13px; margin-left: 18px;}
+.unicef-box > a > .icon-box{
+    width: 76px;
+    height: 76px; 
+    border-radius: 20px; 
+    background-color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 18px;
+}
+
+.bot-content{
+    position: relative;
+    left: -30px;
+    margin-top: 30px; 
+    width:  360px; 
+    height: 376px; 
+    background-color: #F3F5F7;
+}
+.bot-content-inner{width: 99%; padding: 0 30px;}
+.bot-content-inner > button {
+    margin-top: 18px;
+    width: 100%;
+    height: 44px; 
+    border-radius: 10px; 
+    background-color: #6649F5;
+    border: none;
+}
+.bot-content-inner > button > a{color: white; font-size: 13px; float: left; margin-left: 16px;}
+.bot-content-inner > button > a::after{
+    content: "";
+    background: url(../asset/img/icon/right-arrow-white-icon.svg) no-repeat center center;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 60px;
+}
+.bot-content-inner > h2{font-size: 18px; font-weight: 700px; margin: 40px 0 30px 0;}
+.bot-content-inner > h2 > span{color: #84878A;}
+
+.leftgroup-rightNFT{
+    width: 100%; 
+    height: 216px; 
+    background-color: white; 
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.left, .right{width: 50%;}
+.left > a > p,
+.right > a > p{font-size: 13px; font-weight: 700; margin-top: 20px; margin-left: 14px;}
+.left > a > span,
+.right > a > span{font-size: 12px; color: #77797A; margin-left: 14px;}
+
+
+#doc-bar{
+    width: 100%; 
+    height: 134px; 
+    border-radius: 10px; 
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+}
+.doc-bar-inner{width: 100%; height: 100%; padding: 0 30px;}
+.home-top-btn{width: 100%; height: 38px;}
+.home-top-btn > h3{text-align: left; margin-right: 20px; float: left; padding: 1% 0;}
+.home-top-btn > h3:nth-child(1){border-top: 6px solid black;}
+.home-top-btn > h3:nth-child(2),
+.home-top-btn > h3:nth-child(3){margin-top: 6px;}
+.home-bot-btn{width: 100%; margin-top: 30px;}
+.home-bot-btn{width: 100%;}
+.home-bot-menu{display: flex; align-items: center; justify-content: center;}
+.home-bot-menu > li{ display: inline-block; margin: 0; padding: 3px 17px;}
+.home-bot-menu > li > a{text-align: center;}
+.home-bot-menu > li > a > p{margin-bottom: 4px;}
+.home-bot-menu > li > a > p > span{text-align: center; font-size: 13px; font-weight: 500;}
+
+
+/*unicef page*/
+main > #blue-dots{position: relative; z-index: 1;}
+.blue{font-size: 13px; color: #39A6D9; font-weight: 700; margin: 20px 0;}
+.blue-bg-continer{ 
+    position: relative;
+    top: -60px;
+    left: -30px;
+    margin-top: 30px; 
+    width:  360px; 
+    height: 376px; 
+    background-color: #F3F5F7;
+}
+.blue-bg-continer-inner{width: 99%; padding: 0 30px;}
+.blue-bg-continer-inner > p{
+    width: 108%; 
+    position: relative; 
+    top: 47px; 
+    left: -8px; 
+    font-size: 12px; 
+    text-align: center;
+    line-height: 18px;
+}
+.modal-container{width: 100%; padding: 0 30px;}
+.modal-container > .donation-btn-area{
+    margin-top: 82px;
+    width: 100%; 
+    height: 216px; 
+    background-color: white; 
+    border-radius: 10px;
+    position: relative;
+}
+.donation-btn-area > h2{position: relative; top: 20px; font-size: 20px; font-weight: 700; text-align: center;}
+.donation-btn-area > h2 > a{padding: 10px 20px;}
+
+
+.modal {
+    background: #16181B;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+    top: 100%;
+    position: relative;
+    left: -30px;
+    z-index: 102;
+}
+.modal > .modal-inner > .header {
+    width: 360px;
+    height: 60px;
+    background-color: #2A2A2A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal > .modal-inner > .header > h4{
+    font-size: 13px; 
+    font-weight: 700; 
+    color: white;
+}
+.modal > .modal-inner > .header > button{
+    background-color: #2A2A2A; 
+    border: none;
+    position: relative;
+    left: 112px;
+    padding: 1%;
+    cursor: pointer;
+}
+
+
+.modal > .modal-inner > .body {
+    width: 100%;
+}
+.brand-area{background-color: #1F2328;}
+.brand-area-inner,
+.info-agress-cont{
+    width: 100%;
+    padding: 0 30px;
+}
+.brand-area > .brand-area-inner > a > img{position: relative; margin: 14px 0 10px 0;}
+.brand-area > .brand-area-inner > p > button{
+    background-color: #16181B; 
+    height: 28px; 
+    border: 2px solid #77797A; 
+    border-radius: 6px;
+    margin-bottom: 14px;
+}
+.brand-area > .brand-area-inner > p > button > a{
+    color: white; 
+    font-size: 12px; 
+    padding: 6px 8px; 
+}
+.brand-area > .brand-area-inner > p > button > a::after{
+    content: "";
+    background: url(../asset/img/icon/right-arrow-gray-icon.svg) no-repeat center center;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.email-box{
+    width: 300px;
+    height: 70px; 
+    background-color: #1F2328; 
+    border: 2px solid #202325; 
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.email-box > h2{color: #77797A; font-size: 18px; margin: 18px 0 0 14px;}
+.info-agree{margin-top: 20px;}
+.info-agree > p{color: white; font-size: 12px;}
+
+.btn:hover {
+    color: #F4B956;
+}
+.modal-container.modal-open .modal {
+    top: -564px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
