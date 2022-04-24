@@ -57,13 +57,13 @@ li, a, p, span, h1, h2, h3, h4, h5{color: white; font-family: 'Noto Sans KR', sa
     top: -5px;
     left: 4px;
 }
-.top-bar-container > li:nth-child(2){margin-left: 53%;}
+.top-bar-container > li:nth-child(2){margin-left: 60%;}
 .top-bar-container > li:nth-child(3){margin-right: 0px;}
 
 .content{width: 100%; position: relative;}
 .have-money{
     width: 65%;
-    height: 240px;
+    height: 32vh;
     border-radius: 10px;
     background: linear-gradient(140deg, #F7CE7B, #F4B956);
 }
@@ -71,7 +71,8 @@ li, a, p, span, h1, h2, h3, h4, h5{color: white; font-family: 'Noto Sans KR', sa
 .have-money > .have-inner > h3,
 .have-money > .have-inner > span{margin-left: 14px;}
 .have-money > .have-inner > h3{color: black; font-size: 20px;}
-.have-money > .have-inner > span{color: #77797A; font-size: 12px;}
+.have-money > .have-inner > span, 
+.donation-box > span{color: #77797A; font-size: 12px;}
 .paybox{
     position: absolute; 
     right: 0; 
@@ -82,6 +83,8 @@ li, a, p, span, h1, h2, h3, h4, h5{color: white; font-family: 'Noto Sans KR', sa
     border-radius: 10px;
 }
 .paybox:nth-child(1){top: 0;}
+.paybox-tit{font-size: 13px; font-weight: 700; margin-top: 10px; margin-left: 10px;}
+.paybox > span{font-size: 12px; color: #77797A; margin-left: 10px;}
 .bot-pay{top: 124px;}
 .donation-box{
     width: 100%; 
@@ -90,6 +93,8 @@ li, a, p, span, h1, h2, h3, h4, h5{color: white; font-family: 'Noto Sans KR', sa
     background-color: #1F2328; 
     border-radius: 10px;
 }
+.donation-box > h3{position: relative; top: 10px; left: 14px;}
+.donation-box > span{position: relative; top: 10px; left: 14px;}
 
 #jum-box{
     width: 100%; 
@@ -120,16 +125,9 @@ li, a, p, span, h1, h2, h3, h4, h5{color: white; font-family: 'Noto Sans KR', sa
     background-color: rgba(255, 255, 255, 0.2);
     font-weight: 500;
 }
-.img-group{
-    position: relative;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    margin-top: 7px;
-}
+
 .img-group > img{position:absolute; text-align: center;}
-.img-group > img:nth-child(1){position:absolute;}
+.img-group > img:nth-child(1){position:absolute; margin-top: 10px;}
 .home-bg{
     width: 100%;
     height: 14vh;
