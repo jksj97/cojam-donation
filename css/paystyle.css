@@ -19,14 +19,15 @@ li, a, p, span, h1, h2, h3, h4, h5{color: white; font-family: 'Noto Sans KR', sa
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .pay-inner{
     width: 100%;
     height: 100%;
     background-color: #16181B;
-    padding: 0 30px;
+    padding: 0 8%;
     border-radius: 8px;
-    position: relative;
+    position: absolute;
 }
 .payTop-bar{
     width: 100%;
@@ -67,11 +68,10 @@ li, a, p, span, h1, h2, h3, h4, h5{color: white; font-family: 'Noto Sans KR', sa
 }
 
 .paycontent-container{
-    width: 360px;
-    height: 85%;
-    position: relative;
-    left: -30px;
-    top: 10px;
+    width: 100%;
+    height: 84.2%;
+    position: absolute;
+    top: 120px;
     border-radius: 0 0 8px 8px;
 }
 .paycontent-inner{
@@ -79,7 +79,7 @@ li, a, p, span, h1, h2, h3, h4, h5{color: white; font-family: 'Noto Sans KR', sa
     height: 100%;
     padding: 0 30px;
     background-color: white;
-    border-radius: 8px 8px 0 0;
+    border-radius: 8px;
 }
 
 .cont-container{width: 100%; position: relative; top: 30px;}
