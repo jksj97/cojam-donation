@@ -62,13 +62,13 @@ main{margin-top: 50px;}
 
 .bot-content{
     position: relative;
-    left: -30px;
+    left: -8%;
     width: 121%;
     margin-top: 30px;  
     height: 376px; 
     background-color: #F3F5F7;
 }
-.bot-content-inner{width: 99%; padding: 0 30px;}
+.bot-content-inner{width: 99%; padding: 0 8%;}
 .bot-content-inner > p{position: relative; top: 14px;}
 .bot-content-inner > p > button {
     margin-top: 18px;
@@ -213,7 +213,7 @@ main > #blue-dots{position: relative; z-index: 1;}
 .brand-area-inner,
 .info-agress-cont{
     width: 100%;
-    padding: 0 30px;
+    padding: 0 8%;
 }
 .brand-area > .brand-area-inner > a > img{position: relative; margin: 14px 0 10px 0;}
 .brand-area > .brand-area-inner > p > button{
@@ -238,14 +238,25 @@ main > #blue-dots{position: relative; z-index: 1;}
 }
 
 .email-box{
-    width: 300px;
+    width: 100%;
     height: 70px; 
+    padding: 0 8%;
     background-color: #1F2328; 
     border: 2px solid #202325; 
-    border-radius: 10px;
     margin-top: 20px;
+    border-radius: 10px;
 }
-.email-box > h2{color: #77797A; font-size: 18px; margin: 18px 0 0 14px;}
+.email-box > div{
+    width: 100%;
+    height: 100%; 
+}
+.email-box > div > span{
+    color: #77797A; 
+    font-size: 18px; 
+    margin: 18px 0 0 14px;
+    position: relative;
+    top: 18px;
+}
 .info-agree{width: 300px; margin-top: 20px;}
 h3{font-size: 13px;}
 #agreetit{display: flex; align-items: center;}
