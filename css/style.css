@@ -98,8 +98,11 @@ li, a, p, span, h1, h2, h3, h4, h5{color: white; font-family: 'Noto Sans KR', sa
 .shots-box{background-color: #474A4E; width: 6px; height: 6px; border-radius: 50%; margin: 0 4px;}
 
 
-.bot-img-btn{width: 100%; height: 130px; position: relative; top: 0;}
-.bot-img-btn > button {
+.bot-img-btn{
+    width: 100%; 
+    margin: auto;
+}
+.allsee-btn {
     color: white; 
     width: 70px; 
     height: 28px;
@@ -107,12 +110,24 @@ li, a, p, span, h1, h2, h3, h4, h5{color: white; font-family: 'Noto Sans KR', sa
     border-radius: 14px;
     background-color: rgba(255, 255, 255, 0.2);
     font-weight: 500;
-    position: relative;
-    top: 80px;
-    left: 38%;
 }
-.img-group > img{position: absolute;}
-.img-group > img:nth-child(1){bottom: 0; left: 0;}
+.img-group{
+    position: relative;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    border: 1px solid red;
+}
+.img-group > img{position:absolute; text-align: center;}
+.img-group > img:nth-child(1){position:absolute;}
+.home-bg{
+    width: 100%;
+    height: 100%;
+    background: url(../asset/img/contents/orange-bleur.png) no-repeat center center;
+    display: inline-block;
+}
 /* 하단 메뉴 */
 footer{
     width: 100%; 
@@ -127,8 +142,8 @@ footer{
 .top-btn{width: 100%; height: 38px;}
 .top-btn > h3{width: 33.3%; float: left; text-align: center; margin-top: 14px;}
 .bot-btn{width: 100%; margin-top: 30px;}
-.bot-menu{width: 100%; border: 1px solid red;}
-.bot-menu > li{display: inline-block; margin: 0; padding: 3px 12px;}
+.bot-menu{width: 100%; display: flex; align-items: center; justify-content: center; margin: auto;}
+.bot-menu > li{display: inline-block; margin: auto; padding: 1% 4%;}
 .bot-menu > li > a{text-align: center;}
 .bot-menu > li > a > p{margin-bottom: 4px;}
 .bot-menu > li > a > span{font-size: 13px; font-weight: 500;}
