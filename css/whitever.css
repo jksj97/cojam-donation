@@ -17,7 +17,12 @@ li, a, span{text-decoration: none;}
 .home-top-kakaologo{position: relative;}
 .home-top-kakaologo > img,
 .home-top-kakaologo > h2{position: absolute;}
-.home-top-kakaologo > h2{font-size: 18px; font-weight: 700; top: -6px; left: 66px;}
+.home-top-kakaologo > h2{
+    font-size: 18px; 
+    font-weight: 700; 
+    top: -6px; 
+    left: 66px;
+}
 
 .top-bar-container > li:nth-child(1)::after{
     content:"9+";
@@ -62,7 +67,7 @@ main{margin-top: 50px;}
 
 .bot-content{
     position: relative;
-    left: -8%;
+    left: -10%;
     width: 121%;
     margin-top: 30px;  
     height: 376px; 
@@ -136,6 +141,7 @@ main > #blue-dots{position: relative; z-index: 1;}
 .blue{font-size: 13px; color: #39A6D9; font-weight: 700; margin: 20px 0;}
 .blue-bg-continer{ 
     position: relative;
+    top: -20px;
     left: -30px;
     width: 121%; 
     height: 376px; 
@@ -157,31 +163,38 @@ main > #blue-dots{position: relative; z-index: 1;}
     background: url(../asset/img/contents/unicef-people-image.png) no-repeat center center; 
     display: inline-block;
 }
-.modal-container{width: 100%; padding: 0 30px;}
+.modal-container{
+    width: 100%;
+}
 .modal-container > .donation-btn-area{
     margin-top: 82px;
     width: 100%; 
-    height: 216px; 
-    background-color: white; 
-    border-radius: 10px;
     position: relative;
 }
-.donation-btn-area > h2{position: relative; top: 20px; font-size: 20px; font-weight: 700; text-align: center;}
-.donation-btn-area > h2 > a{padding: 10px 20px;}
-
-
-.modal {
-    background: #16181B;
-    width: 121%;
+.donation-btn-area > .modal-open-bgarea{
+    width: 80%;
     height: 100vh;
-    margin: auto;
-    transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
-    top: 100%;
-    position: relative;
-    left: -30px;
-    z-index: 102;
+    padding: 0 8%;
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    margin: 0 auto;
 }
-.modal > .modal-inner > .header {
+.donation-btn-area > .modal-open-bgarea > a{padding: 10px 20px; position: relative; top: 20px; font-size: 20px; font-weight: 700; text-align: center;}
+
+
+
+#modal {
+    content: "안녕";
+    background: #16181B;
+    width: 100%;
+    height: 100%;
+    transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+    z-index: 200;
+    position: relative;
+    top: 50%;
+}
+/* .modal > .modal-inner > .header {
     position: relative;
     width: 100%;
     height: 60px;
@@ -239,16 +252,16 @@ main > #blue-dots{position: relative; z-index: 1;}
 
 .email-box{
     width: 100%;
-    height: 70px; 
-    padding: 0 8%;
-    background-color: #1F2328; 
-    border: 2px solid #202325; 
+    height: 70px;  
     margin-top: 20px;
-    border-radius: 10px;
 }
 .email-box > div{
-    width: 100%;
+    width: 90%;
     height: 100%; 
+    padding: 0 8%;
+    background-color: #1F2328; 
+    border: 2px solid #202325;
+    border-radius: 10px;
 }
 .email-box > div > span{
     color: #77797A; 
@@ -292,7 +305,7 @@ h3{font-size: 13px;}
 }
 
 .chooes-agree-cont{width: 100%; margin-top: 10px;}
-/* .chooes-agree-cont > ul > li{display: flex; align-items: center;} */
+/* .chooes-agree-cont > ul > li{display: flex; align-items: center;}
 .chooes-agree-cont > ul > li > p{color: white; font-size: 13px; margin-bottom: 3px;}
 .chooes-agree-cont > ul > li > p::before{
     content: "";
@@ -309,11 +322,12 @@ h3{font-size: 13px;}
 .btn-group > button{height: 24px; margin-right: 10px; border: none; background-color: white; border-radius: 12px;}
 .btn-group > button > span{color: black; font-size: 12px; padding:0 10px; font-weight: 600;}
 
+.next-btn-container{position: relative; top: 0; width: 100%; height: 56px; margin: 0 auto;}
 .next-btn{
     cursor: pointer; 
     background-color: #FCEC4E; 
     width: 100%; 
-    height: 56px; 
+    height: 100%; 
     border: none; 
     border-radius: 28px;
     margin-top: 14px;
@@ -323,9 +337,10 @@ h3{font-size: 13px;}
 .btn:hover {
     color: #F4B956;
 }
-.modal-container.modal-open .modal {
-    top: -594px;
-}
+.modal-container .donation-btn-area .modal {
+    top: 150px;
+    border: 1px solid red;
+} */
 
 
 

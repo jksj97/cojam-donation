@@ -82,7 +82,7 @@ li, a, p, span, h1, h2, h3, h4, h5{color: white; font-family: 'Noto Sans KR', sa
     border-radius: 8px;
 }
 
-.cont-container{width: 100%; position: relative; top: 30px;}
+.cont-container{width: 100%; position: relative; top: 30px;  display: flex; align-items: center; justify-content: space-between;}
 .cont-container > ul > li{display: inline-block; font-weight: 200; font-size: 24px; margin-right: 14px;}
 .cont-container > ul > li.active{font-weight: 700; font-size: 26px;}
 .cont-container > ul > li.active::after{
