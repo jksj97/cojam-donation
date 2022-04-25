@@ -16,4 +16,16 @@ $( document ).ready(function() {
       $(".close-modal").click(function(){
         $(".modal").fadeOut();
       });
+
+
+      //brand modal
+
+      $(".brandclick-modal").click(function(){
+        $(".container").addClass("brand-open");
+      })
+
+      $(".brand-close-modal").click(function(){
+        $(".container").removeClass("brand-open");
+      })
+
 });
