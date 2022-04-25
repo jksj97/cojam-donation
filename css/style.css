@@ -10,6 +10,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 /* 기본 셋팅 */
@@ -20,8 +21,8 @@ li, a, p, span, h1, h2, h3, h4, h5{color: white; font-family: 'Noto Sans KR', sa
 
 /* 본 셋팅 */
 #wrapper{
-    width: 360px;
-    height: 760px;
+    width: 26%;
+    height: 100vh;
     border: 2px solid #ECEFF2;
     border-radius: 12px;
     box-shadow: 8px 12px 20px rgba(1, 0, 29, 0.068);
