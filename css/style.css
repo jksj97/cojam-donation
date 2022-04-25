@@ -116,9 +116,12 @@ li, a, p, span, h1, h2, h3, h4, h5{color: white; font-family: 'Noto Sans KR', sa
 
 .bot-img-btn{
     width: 100%; 
-    margin: auto;
+    height: 100%;
+    position: relative;
+    border: 1px solid red;
 }
-.allsee-btn {
+
+ .allsee-btn {
     position: relative;
     top: 120px;
     left: 55%;
@@ -139,7 +142,7 @@ li, a, p, span, h1, h2, h3, h4, h5{color: white; font-family: 'Noto Sans KR', sa
     height: 14vh;
     background: url(../asset/img/contents/orange-bleur.png) no-repeat center center;
     display: inline-block;
-}
+} 
 /* 하단 메뉴 */
 footer{
     width: 100%; 
